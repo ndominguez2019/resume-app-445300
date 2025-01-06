@@ -1,0 +1,6 @@
+Django>=3.2,<4.0
+gunicorn
+psycopg2-binary
+pillow  # if you're using image handling
+django-crispy-forms==1.14.0
+
