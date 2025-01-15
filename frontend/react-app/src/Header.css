@@ -1,71 +1,51 @@
 .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #333 !important;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
+    background-color: #000; /* black */
+    padding: 1em;
+  }
+  
+  .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 60px; /* increased height */
-    padding: 0 20px;
-    color: #fff; /* Added color property to change text color to white */
+    width: 100%;
   }
-
-  .nav-container {
+  
+  .nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: flex-start;
+  }
+  
+  .search-container {
+    margin-left: 20px;
   }
   
   .logo-search-container {
     display: flex;
     align-items: center;
+  }
+  
+  .tech-logos-wrapper {
+    display: flex;
     margin-left: auto;
   }
   
-  .react-logo {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-  }
-  
-  .search-bar {
-    width: 200px;
-    height: 30px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-
-  .icon-search {
-    position: relative;
-    top: 0;
-    right: 0;
-    color: #666;
-    font-size: 16px;
-    margin-left: 10px;
-  }
-  
-  .nav-list {
-    list-style: none;
-    margin-right: 90px; /* add this line */
-    margin: 0;
-    padding: 0;
+  .tech-logos {
     display: flex;
-    justify-content: flex-start
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .tech-logos img {
+    filter: invert(1); /* Add this line to invert the icon colors */
   }
   
   .nav-item {
-    margin-right: 80px; 
+    margin-right: 20px;
+    color: #fff; /* Added to make nav items visible */
   }
   
-  .nav-link {
-    text-decoration: none;
-    color: #fff;
-  }
-  
-  .nav-link:hover {
-    color: #666;
+  .icon-search {
+    color: #fff; /* Added to make magnifying glass icon visible */
   }
