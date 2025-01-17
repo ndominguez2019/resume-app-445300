@@ -1,8 +1,16 @@
 // Home.js
 import React from 'react';
+import MarketAuxNews from './MarketAuxNews';
+import About from './About';
+import './global.css';
 
 function Home() {
-  return <h1>Welcome to the Home page!</h1>;
+  return (
+    <div>
+      <About />
+      <MarketAuxNews />
+    </div>
+  );
 }
 
 export default Home;

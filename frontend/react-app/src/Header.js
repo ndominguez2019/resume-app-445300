@@ -1,29 +1,32 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHome, faUser, faBriefcase } from '@fortawesome/free-solid-svg-icons';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { faGoogle, faUbuntu, faReact } from '@fortawesome/free-brands-svg-icons';
 
 function Header() {
-  const [searchTerm, setSearchTerm] = useState('');
-
-  const handleSearch = (e) => {
-    setSearchTerm(e.target.value);
-    // Add logic to handle search functionality
-  };
-
   return (
     <nav className="navbar">
       <div className="nav-container">
         <ul className="nav-list">
           <li className="nav-item">
+            <div className="nav-icon-container">
+              <FontAwesomeIcon icon={faHome} className="nav-icon" />
+            </div>
             <Link to="/" className="nav-link">Home</Link>
           </li>
           <li className="nav-item">
+            <div className="nav-icon-container">
+              <FontAwesomeIcon icon={faUser} className="nav-icon" />
+            </div>
             <Link to="/profile" className="nav-link">Profile</Link>
           </li>
           <li className="nav-item">
+            <div className="nav-icon-container">
+              <FontAwesomeIcon icon={faBriefcase} className="nav-icon" />
+            </div>
             <Link to="/projects" className="nav-link">Projects</Link>
           </li>
         </ul>
@@ -31,8 +34,6 @@ function Header() {
           <div className="logo-search-container">
             <input
               type="search"
-              value={searchTerm}
-              onChange={handleSearch}
               className="search-bar"
               placeholder="Search..."
             />

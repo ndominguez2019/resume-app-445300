@@ -1,6 +1,7 @@
 .navbar {
     background-color: #000; /* black */
     padding: 1em;
+    font-family: Arial, sans-serif; /* modern font */
   }
   
   .nav-container {
@@ -15,6 +16,29 @@
     margin: 0;
     padding: 0;
     display: flex;
+  }
+  
+  .nav-item {
+    margin-right: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .nav-link {
+    color: #fff; /* white */
+    font-size: 12px; /* decreased font size */
+    text-decoration: none;
+  }
+  
+  .nav-icon-container {
+    margin-bottom: 5px;
+  }
+  
+  .nav-icon {
+    color: #fff; /* white */
+    font-size: 18px; /* larger icon size */
   }
   
   .search-container {
@@ -38,14 +62,9 @@
   }
   
   .tech-logos img {
-    filter: invert(1); /* Add this line to invert the icon colors */
-  }
-  
-  .nav-item {
-    margin-right: 20px;
-    color: #fff; /* Added to make nav items visible */
+    filter: invert(1); /* invert icon colors */
   }
   
   .icon-search {
-    color: #fff; /* Added to make magnifying glass icon visible */
+    color: #fff;
   }
