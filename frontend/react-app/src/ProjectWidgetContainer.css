@@ -1,0 +1,44 @@
+.project-widget-container {
+    background-color: #333;
+    padding: 20px;
+    border: 1px solid #444;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-top: 40px;
+  }
+  
+  .project-widget {
+    background-color: #333;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 400px !important;
+    height: 300px !important;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .project-widget .top-cell {
+    background-color: #555;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    height: 150px;
+    margin-bottom: 20px;
+  }
+  
+  .project-widget .project-data-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    padding: 0;
+    flex-grow: 1;
+  }
+  
+  .project-widget .project-data-cell {
+    background-color: #555;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+  }
